@@ -1,10 +1,12 @@
 import React from 'react'
 import Navbar from './component/Navbar/Navbar'
+import Banner from './component/Hero Section/Banner'
 
 const App = () => {
   return (
-    <div className='w-full h-8'>
+    <div>
       <Navbar />
+      <Banner />
     </div>
   )
 }

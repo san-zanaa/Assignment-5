@@ -5,13 +5,13 @@ import hamburgerIcon from "../../assets/hamburger.png"
 function Navbar() {
     const[isOpen, setIsOpen] = useState(false);
   return (
-    <div className='w-full h-24 p-10 flex justify-between items-center sticky top-0 z-50'>
-        <div className='md:hidden flex items-center'>
+    <div className='w-full h-24 px-10 md:px-4 flex justify-between items-center md:flex md:justify-between sticky top-0 z-50'>
+        <div className='md:hidden flex items-center justify-start'>
             <button onClick={() => setIsOpen(!isOpen)} className='focus:outline-none'>
                 <img src={hamburgerIcon} alt="" className="h-8 w-8 object-contain"/>
             </button>
         </div>
-        <div className='flex items-center max-md:absolute max-md:left-1/2 max-md:-translate-x-1/2'>
+        <div className='flex items-center justify-center md:justify-startjusttify-self-center md:justify-self-auto '>
             <img src={img} alt="" className="h-8 w-auto object-contain"/>
         </div>
 
@@ -23,8 +23,8 @@ function Navbar() {
                 <li><a href="#">Contact</a></li>
             </ul>
 
-        <div className='flex items-center gap-4'>
-            <button className='text-[#475569 whitespace-nowrap]'>Sign In</button>
+        <div className='flex items-center gap-4 justify-self-end whitespace-nowrap'>
+            <button className='text-[#475569] whitespace-nowrap shrink-0]'>Sign In</button>
             <button className='bg-[#DB2777] px-5 py-2 rounded-full text-white'>Sign Up</button>
         </div>
 
