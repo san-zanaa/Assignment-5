@@ -5,7 +5,7 @@ import hamburgerIcon from "../../assets/hamburger.png"
 function Navbar() {
     const[isOpen, setIsOpen] = useState(false);
   return (
-    <div className='w-full h-24 px-10 md:px-4 flex justify-between items-center md:flex md:justify-between sticky top-0 z-50'>
+    <div className='w-full h-24 px-10 md:px-4 flex justify-between items-center md:flex md:justify-between bg-white sticky top-0 z-50'>
         <div className='md:hidden flex items-center justify-start'>
             <button onClick={() => setIsOpen(!isOpen)} className='focus:outline-none'>
                 <img src={hamburgerIcon} alt="" className="h-8 w-8 object-contain"/>
