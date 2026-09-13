@@ -42,8 +42,8 @@ const Cards = (props) => {
         </p>
       </div>
 
-      <div className="mt-5 flex justify-between items-center gap-2 border-t-0.5">
-        <span className="rounded-md bg-slate-100 px-2 py-1 text-[10px] text-slate-500">
+      <div className="mt-5 flex justify-between items-center gap-2 border-t-[1px] border-gray-100">
+        <span className="rounded-md bg-slate-100 px-2 py-1 mt-2 text-[10px] text-slate-500">
           {props.category}
         </span>
 
