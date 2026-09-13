@@ -16,8 +16,8 @@ const badgeColors = {
 
 const Cards = (props) => {
   return (
-    <div className={`flex w-full flex-col rounded-2xl border bg-white p-4 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg
-        ${props.isSelected ? "border-pink-500 shadow-md" : "border-slate-200"}`}>
+    <div className={`flex w-full flex-col rounded-2xl border bg-white p-4 shadow-sm
+        ${props.isSelected ? "border-pink-500 shadow-md" : "border-slate-200 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-lg"}`}>
         <div className="flex items-center justify-between">
         <img src={props.icon} alt={props.name} className="h-10 w-10 object-contain"/>
 
@@ -42,16 +42,16 @@ const Cards = (props) => {
         </p>
       </div>
 
-      <div className="mt-5 flex items-center gap-2">
+      <div className="mt-5 flex justify-between items-center gap-2 border-t-0.5">
         <span className="rounded-md bg-slate-100 px-2 py-1 text-[10px] text-slate-500">
           {props.category}
         </span>
 
-        <span className="rounded-md bg-slate-100 px-2 py-1 text-[10px] text-slate-500">
+        <span className="text-[12px] text-slate-500">
           {props.difficulty}
         </span>
 
-        <span className="text-[10px] text-slate-500">
+        <span className="text-[12px] text-slate-500">
           ⭐ {props.rating}
         </span>
       </div>

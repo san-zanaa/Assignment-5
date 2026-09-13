@@ -30,22 +30,25 @@ const MainCards = () => {
         setStack([])
     }
   return (
-    <div className='w-[95%] mt-10 py-8 px-8'>
+    <div className='w-[95%] mt-10 mx-auto py-8 px-8'>
         <Texts />
         
-        <div className='mt-8 grid grid-cols-1 gap-5 md:grid-cols-3'>
-            {technologies.map((technology) => (
-                <Cards key={technology.id}
-                {...technology}
-                onAdd={Add}
-                isSelected={stack.some((item)=> item.id === technology.id)}
-                />
-            ))}
-        </div>
-
-        <SideBar stack={stack}
-        onRemove={handleRemove}
-        onRemoveAll={handleRemoveAll} />
+        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-4">
+            <div className='mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:col-span-3 lg:grid-cols-3'>
+                {technologies.map((technology) => (
+                    <Cards key={technology.id}
+                    {...technology}
+                    onAdd={Add}
+                    isSelected={stack.some((item)=> item.id === technology.id)}
+                    />
+                    ))}
+            </div>
+            <div className='lg:col-span-1'>
+                <SideBar stack={stack}
+            onRemove={handleRemove}
+            onRemoveAll={handleRemoveAll} />
+            </div>
+         </div>
     </div>
   )
 }

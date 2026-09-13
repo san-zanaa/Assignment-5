@@ -23,11 +23,11 @@ const BannerLeft = () => {
       </div>
 
       <div className='flex items-center justify-center md:justify-start gap-3 md:gap-5 mt-6'>
-        <button className='flex-1 md:flex-none bg-linear-to-r from-[#F97316] to-[#EC4899] text-white rounded-md px-4 md:px-6 py-3'>
+        <button className='flex-1 md:flex-none bg-linear-to-r from-[#F97316] to-[#EC4899] text-white rounded-md px-4 md:px-6 py-3 hover:bg-linear-to-l cursor-pointer'>
           Explore Technologies
         </button>
 
-        <button className='flex-1 md:flex-none bg-white text-black rounded-md border border-[#CBD5E1] px-4 md:px-6 py-3'>
+        <button className='flex-1 md:flex-none bg-white text-black rounded-md border border-[#CBD5E1] px-4 md:px-6 py-3 hover:bg-[#f8f9fa] cursor-pointer'>
           Learn More
         </button>
       </div>

@@ -11,8 +11,8 @@ const SideBar = (props) => {
             {props.stack.length === 0 ? "No technologies selected yet" : `${props.stack.length} Technology Selected`}
         </p>
         {props.stack.length === 0 ? (
-            <div className='mt-6 flex h-24 items-center justify-center rounded-xl border border-dashed border-slate-200'> 
-            <p className='text-sm text-slate-300'>
+            <div className='mt-6 flex h-16 items-center justify-center rounded-xl border border-dashed border-slate-200'> 
+            <p className='text-sm text-slate-400'>
                 Your stack is empty
             </p>
             </div>
