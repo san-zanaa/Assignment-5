@@ -13,9 +13,9 @@ const FooterLeft = () => {
             <ul className='flex items-center gap-5 list-none p-0 text-slate-700'>
                 <li><a href="#">Github</a></li>
                 <li className='flex items-center gap-3'>
-                    <span>•</span><a href="#">Twitter</a></li>
+                    <span className='md:hidden'>•</span><a href="#">Twitter</a></li>
                 <li className='flex items-center gap-3'>
-                    <span>•</span><a href="#">LinkedIn</a></li>
+                    <span className='md:hidden'>•</span><a href="#">LinkedIn</a></li>
             </ul>
         </div>
     </div>
