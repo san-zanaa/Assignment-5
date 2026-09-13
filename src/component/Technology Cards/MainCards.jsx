@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
 import Texts from './Texts'
-import Cards from './Cards';
+import Cards from './Cards'
+import SideBar from './SideBar';
 
 const MainCards = () => {
     const [technologies, setTechnologies] = useState([]);
     const [stack, setStack] = useState([]);
     useEffect(() =>{
-        fetch("/public/Data.json")
+        fetch("/Data.json")
         .then((res)=> res.json())
         .then((data)=> setTechnologies(data))
         .catch((error)=> console.error("Enter loading technologies:", error));
@@ -19,6 +20,14 @@ const MainCards = () => {
             }
             return [...prev, technology]
         })
+    }
+
+    const handleRemove = (id) => {
+        setStack((prev) => 
+        prev.filter((item) => item.id !== id))
+    }
+    const handleRemoveAll = () => {
+        setStack([])
     }
   return (
     <div className='w-[95%] mt-10 py-8 px-8'>
@@ -33,6 +42,10 @@ const MainCards = () => {
                 />
             ))}
         </div>
+
+        <SideBar stack={stack}
+        onRemove={handleRemove}
+        onRemoveAll={handleRemoveAll} />
     </div>
   )
 }
