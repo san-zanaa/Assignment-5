@@ -30,7 +30,7 @@ const MainCards = () => {
         setStack([])
     }
   return (
-    <div className='w-[95%] mt-10 mx-auto py-8 px-8'>
+    <div className='w-[95%] mt-10 mx-auto py-8 px-8 mb-20'>
         <Texts />
         
         <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-4">

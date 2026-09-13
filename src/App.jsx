@@ -2,6 +2,7 @@
 import Navbar from './component/Navbar/Navbar'
 import Banner from './component/Hero Section/Banner'
 import MainCards from './component/Technology Cards/MainCards'
+import FooterMain from './component/Footer/FooterMain'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Banner />
       <MainCards />
+      <FooterMain />
     </div>
   )
 }
