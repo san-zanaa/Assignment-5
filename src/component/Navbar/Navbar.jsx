@@ -25,7 +25,7 @@ function Navbar() {
 
         <div className='flex items-center gap-4 justify-self-end whitespace-nowrap'>
             <button className='text-[#475569] whitespace-nowrap shrink-0]'>Sign In</button>
-            <button className='bg-[#DB2777] px-5 py-2 rounded-full text-white'>Sign Up</button>
+            <button className='bg-[#DB2777] px-5 py-2 rounded-full text-white hover:bg-[#f72585] cursor-pointer'>Sign Up</button>
         </div>
 
         {isOpen && (
